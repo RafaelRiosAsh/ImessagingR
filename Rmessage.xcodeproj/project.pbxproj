@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		14629C0B232290F100123BBC /* burger_120.png in Resources */ = {isa = PBXBuildFile; fileRef = 14629C0A232290F100123BBC /* burger_120.png */; };
 		14B7A6082320067A00382080 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14B7A6072320067A00382080 /* AppDelegate.swift */; };
 		14B7A60A2320067A00382080 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14B7A6092320067A00382080 /* ViewController.swift */; };
 		14B7A60D2320067A00382080 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14B7A60B2320067A00382080 /* Main.storyboard */; };
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		14629C0A232290F100123BBC /* burger_120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = burger_120.png; path = ../../../burger_120.png; sourceTree = "<group>"; };
 		14B7A6042320067A00382080 /* Rmessage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Rmessage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		14B7A6072320067A00382080 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		14B7A6092320067A00382080 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -103,6 +105,7 @@
 				14B7A6092320067A00382080 /* ViewController.swift */,
 				14B7A60B2320067A00382080 /* Main.storyboard */,
 				14B7A6112320067B00382080 /* Assets.xcassets */,
+				14629C0A232290F100123BBC /* burger_120.png */,
 				14B7A6132320067B00382080 /* LaunchScreen.storyboard */,
 				14B7A6162320067B00382080 /* Info.plist */,
 				14B7A60E2320067A00382080 /* Rmessage.xcdatamodeld */,
@@ -234,6 +237,7 @@
 			files = (
 				14B7A6152320067B00382080 /* LaunchScreen.storyboard in Resources */,
 				14B7A6122320067B00382080 /* Assets.xcassets in Resources */,
+				14629C0B232290F100123BBC /* burger_120.png in Resources */,
 				14B7A60D2320067A00382080 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

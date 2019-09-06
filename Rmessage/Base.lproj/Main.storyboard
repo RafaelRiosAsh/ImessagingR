@@ -18,21 +18,46 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="4e1-uS-VwJ">
-                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
-                                <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="burger_120.png" translatesAutoresizingMaskIntoConstraints="NO" id="bfm-6q-4ln">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="818"/>
-                                    </imageView>
-                                </subviews>
-                            </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="burger_120.png" translatesAutoresizingMaskIntoConstraints="NO" id="bfm-6q-4ln">
+                                <rect key="frame" x="0.0" y="44" width="414" height="120"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Are you ready to order?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SFi-BS-cmI" userLabel="burgerOrder">
+                                <rect key="frame" x="0.0" y="199" width="414" height="30.5"/>
+                                <fontDescription key="fontDescription" name=".SFNSDisplay" family=".SF NS Display" pointSize="26"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="xB7-10-zMJ" userLabel="burgerSegmented">
+                                <rect key="frame" x="0.0" y="244" width="414" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="tEB-KX-CaV"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="burger"/>
+                                    <segment title="big burger"/>
+                                    <segment title="medium burger"/>
+                                    <segment title="large burger"/>
+                                </segments>
+                            </segmentedControl>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="4GA-iF-Xss" userLabel="burgerDisplay">
+                                <rect key="frame" x="0.0" y="284" width="414" height="578"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="4e1-uS-VwJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="0nw-FH-p9K"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="4e1-uS-VwJ" secondAttribute="bottom" id="ECd-K9-vqK"/>
-                            <constraint firstItem="4e1-uS-VwJ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Mx6-C8-COR"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="4e1-uS-VwJ" secondAttribute="trailing" id="wUi-2A-W33"/>
+                            <constraint firstItem="xB7-10-zMJ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="200" id="337-Hg-xCX"/>
+                            <constraint firstItem="4GA-iF-Xss" firstAttribute="top" secondItem="xB7-10-zMJ" secondAttribute="bottom" constant="20" id="8Sy-wY-uxZ"/>
+                            <constraint firstItem="xB7-10-zMJ" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="8wv-HK-UzZ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="4GA-iF-Xss" secondAttribute="trailing" id="9tD-N9-RpS"/>
+                            <constraint firstItem="SFi-BS-cmI" firstAttribute="top" secondItem="bfm-6q-4ln" secondAttribute="bottom" constant="35" id="GaP-5w-z1b"/>
+                            <constraint firstItem="SFi-BS-cmI" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Ifp-5i-ytf"/>
+                            <constraint firstItem="xB7-10-zMJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="VxY-rQ-cgM"/>
+                            <constraint firstItem="4GA-iF-Xss" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="XqR-q4-HBB"/>
+                            <constraint firstItem="bfm-6q-4ln" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="mzg-PT-1vf"/>
+                            <constraint firstItem="SFi-BS-cmI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="rdY-xn-VUV"/>
+                            <constraint firstItem="bfm-6q-4ln" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="td7-YG-lSf"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="4GA-iF-Xss" secondAttribute="bottom" id="tt3-Ae-1Wd"/>
+                            <constraint firstItem="bfm-6q-4ln" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="wPt-Ve-emM"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -43,6 +68,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="burger_120.png" width="16" height="16"/>
+        <image name="burger_120.png" width="120" height="120"/>
     </resources>
 </document>
