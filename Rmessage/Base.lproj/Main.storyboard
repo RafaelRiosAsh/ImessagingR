@@ -36,10 +36,9 @@
                                     <segment title="burger"/>
                                     <segment title="big burger"/>
                                     <segment title="medium burger"/>
-                                    <segment title="large burger"/>
                                 </segments>
                             </segmentedControl>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="4GA-iF-Xss" userLabel="burgerDisplay">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="burger1.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="4GA-iF-Xss" userLabel="burgerDisplay">
                                 <rect key="frame" x="0.0" y="284" width="414" height="578"/>
                             </imageView>
                         </subviews>
@@ -61,6 +60,10 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="burgerDisplay" destination="4GA-iF-Xss" id="dcf-zm-kFx"/>
+                        <outlet property="burgerSegmented" destination="xB7-10-zMJ" id="VrF-9Z-gN9"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -68,6 +71,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="burger1.jpg" width="288" height="288"/>
         <image name="burger_120.png" width="120" height="120"/>
     </resources>
 </document>
